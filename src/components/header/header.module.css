@@ -1,0 +1,99 @@
+.header {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  position: relative;
+  padding: 20px 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.headerBg {
+  height: 515px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  background-size: cover;
+  background-color: #242832;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headerBg:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(44, 51, 64, 0.1);
+}
+
+.headerBar {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerMenu {
+  display: none;
+  flex-direction: row;
+}
+
+.headerMenu a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
+  padding: 12px 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+}
+
+.headerMenu a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.2s ease-out;
+  background-color: var(--color-primary);
+}
+
+.headerMenu a:hover:after {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .headerBar {
+    text-align: left;
+  }
+
+  .headerContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerMenu {
+    display: flex;
+  }
+}

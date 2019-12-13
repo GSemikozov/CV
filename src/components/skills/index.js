@@ -1,0 +1,80 @@
+import React from 'react';
+
+import styles from './skills.module.css';
+
+export const Skills = () => (
+  <div className={styles.skillsContainer}>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Invision / Figma</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `98%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>HTML5 & CSS3</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `98%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Sass / Less</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `98%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Webpack, Docker</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `83%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Javascript</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `86%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>React + Redux</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `80%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Vue</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `60%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>AngularJS</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `60%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Node</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `70%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Git</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `91%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Laravel, php, mysql</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `61%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>MongoDB, graphQL</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `79%` }}></div>
+      </div>
+    </div>
+  </div>
+)

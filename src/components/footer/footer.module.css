@@ -1,0 +1,30 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: transition, background-color 0.25s linear 0s;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+
+.footer a svg {
+  fill: #d7d7d7;
+}
+
+.footer a:hover svg {
+  fill: var(--color-white);
+}
+
+.footer a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

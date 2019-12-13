@@ -1,0 +1,11 @@
+.section-box {
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: 30px 20px;
+}
+
+@media all and (min-width: 768px) {
+  .section-box {
+    padding: 40px 50px;
+  }
+}

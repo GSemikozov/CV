@@ -1,21 +1,44 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { Box } from '../components/box';
+import { Container } from '../components/container';
+import { Education } from '../components/education';
+import { Experience } from '../components/experience';
+import { Layout } from '../components/layout';
+import { Portfolio } from '../components/portfolio';
+import { Profile } from '../components/profile';
+import { Section } from '../components/section';
+import { SectionTitle } from '../components/section-title';
+import SEO from '../components/seo';
+import { Skills } from '../components/skills';
 
-const IndexPage = () => (
+export default () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="website title" />
+    <Container>
+      <Section id="about">
+        <Profile />
+      </Section>
+      <Section id="skills">
+        <SectionTitle title="Professional skills" />
+        <Box>
+          <Skills />
+        </Box>
+      </Section>
+      <Section id="portfolio">
+        <SectionTitle title="Portfolio links" />
+        <Portfolio />
+      </Section>
+      <Section id="experience">
+        <SectionTitle title="Experience & Projects" />
+        <Experience />
+      </Section>
+      <Section id="education">
+        <SectionTitle title="Education" />
+        <Box>
+          <Education />
+        </Box>
+      </Section>
+    </Container>
   </Layout>
 )
-
-export default IndexPage
