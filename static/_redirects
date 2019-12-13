@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://herman-semykozov-cv.netlify.com/* https://herman-semykozov-cv.online/:splat 301!
