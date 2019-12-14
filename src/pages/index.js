@@ -14,7 +14,7 @@ import { Skills } from '../components/skills';
 
 export default () => (
   <Layout>
-    <SEO />
+    <SEO title="Herman Semykozov | CV" />
     <Container>
       <Section id="about">
         <Profile />
