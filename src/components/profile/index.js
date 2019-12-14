@@ -21,7 +21,7 @@ export const Profile = () => (
               I'm <strong>Herman Semykozov</strong>
             </h1>
             <h2 className={styles.profilePosition}>
-              Experienced front-end developer from Tallinn
+              Front-end developer based in Tallinn
             </h2>
           </div>
           <div className={styles.profileTable}>
