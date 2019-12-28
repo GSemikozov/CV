@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 
 import styles from './contact-form.module.css';
 
-const recaptcha_key = "6Lf8mMoUAAAAAAk7GGKugr_M7Dt330vW9eh7-tFB"
+const recaptcha_key = "6LdNrcoUAAAAAN8qUpvweyhT0jq4C4NT09c82hJ3"
 
 const ContactFormLayout = ({
   setFieldValue,
