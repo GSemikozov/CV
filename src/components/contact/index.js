@@ -20,7 +20,7 @@ const ContactFormLayout = ({
       name="contact"
       method="post"
       data-netlify="true"
-      // data-netlify-recaptcha="true"
+      data-netlify-recaptcha="true"
       data-netlify-honeypot="bot-field"
     >
       <h3 className={styles.formTitle}>Feel free to contact me</h3>
@@ -67,7 +67,7 @@ const ContactFormLayout = ({
           <span className={styles.error}>{errors.message}</span>
         )}
       </div>
-      {/* {values.name && values.email && values.message && (
+      {values.name && values.email && values.message && (
         <div className={styles.inputField}>
           <FastField
             component={Recaptcha}
@@ -81,7 +81,7 @@ const ContactFormLayout = ({
             className={styles.error}
           />
         </div>
-      )} */}
+      )}
       {values.success && (
         <div className={styles.success}>
           <h4>
@@ -108,7 +108,7 @@ export const ContactForm = withFormik({
     name: "",
     email: "",
     message: "",
-    // recaptcha: "",
+    recaptcha: "",
     success: false,
   }),
   validationSchema: () =>
@@ -118,7 +118,7 @@ export const ContactForm = withFormik({
         .email("Invalid email")
         .required("Email field is required"),
       message: Yup.string().required("Message field is required"),
-      // recaptcha: Yup.string().required("Robots are not welcome yet!"),
+      recaptcha: Yup.string().required("Robots are not welcome yet!"),
     }),
   handleSubmit: async (
     { name, email, message, recaptcha },
@@ -132,7 +132,7 @@ export const ContactForm = withFormik({
           )
           .join("&")
       }
-      await fetch("/?no-cache=1", {
+      await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
@@ -140,7 +140,7 @@ export const ContactForm = withFormik({
           name,
           email,
           message,
-          // "g-recaptcha-response": recaptcha,
+          "g-recaptcha-response": recaptcha,
         }),
       })
       await setSubmitting(false)
