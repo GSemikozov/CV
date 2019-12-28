@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Box } from '../components/box';
+import { ContactForm } from '../components/contact';
 import { Container } from '../components/container';
 import { Education } from '../components/education';
 import { Experience } from '../components/experience';
@@ -37,6 +38,12 @@ export default () => (
         <SectionTitle title="Education" />
         <Box>
           <Education />
+        </Box>
+      </Section>
+      <Section id="contact">
+        <SectionTitle title="Contacts" />
+        <Box>
+          <ContactForm />
         </Box>
       </Section>
     </Container>

@@ -24,6 +24,7 @@ export const Header = ({ siteTitle }) => (
           <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           <AnchorLink href="#experience">Experience</AnchorLink>
           <AnchorLink href="#education">Education</AnchorLink>
+          <AnchorLink href="#contact">Contacts</AnchorLink>
         </div>
       </Container>
     </div>
