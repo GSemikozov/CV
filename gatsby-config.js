@@ -23,6 +23,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-155123187-1",
+        head: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
