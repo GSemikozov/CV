@@ -23,6 +23,7 @@ const ContactFormLayout = ({
       data-netlify-recaptcha="true"
       data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <h3 className={styles.formTitle}>Feel free to contact me</h3>
       <div className={styles.inputField}>
         <FastField
