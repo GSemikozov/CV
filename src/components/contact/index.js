@@ -1,19 +1,13 @@
 import { ErrorMessage, FastField, Form, withFormik } from 'formik';
 import React from 'react';
-import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 
 import styles from './contact-form.module.css';
 
-const recaptcha_key = "6LdNrcoUAAAAAAhel9tZw5JIDc-7JcMEG1H_RRB4"
+// import Recaptcha from 'react-google-recaptcha';
+// const recaptcha_key = "6LdNrcoUAAAAAAhel9tZw5JIDc-7JcMEG1H_RRB4"
 
-const ContactFormLayout = ({
-  setFieldValue,
-  isSubmitting,
-  values,
-  errors,
-  touched,
-}) => {
+const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
   return (
     <Form
       className={styles.contactForm}
@@ -67,22 +61,22 @@ const ContactFormLayout = ({
           <span className={styles.error}>{errors.message}</span>
         )}
       </div>
-      {values.name && values.email && values.message && (
-        // <div className={styles.inputField}>
-        //   <FastField
-        //     component={Recaptcha}
-        //     sitekey={recaptcha_key}
-        //     name="recaptcha"
-        //     onChange={value => setFieldValue("recaptcha", value)}
-        //   />
-        //   <ErrorMessage
-        //     name="recaptcha"
-        //     component="span"
-        //     className={styles.error}
-        //   />
-        // </div>
-        <div data-netlify-recaptcha="true"></div>
-      )}
+      {/* {values.name && values.email && values.message && (
+        <div className={styles.inputField}>
+          <FastField
+            component={Recaptcha}
+            sitekey={recaptcha_key}
+            name="recaptcha"
+            onChange={value => setFieldValue("recaptcha", value)}
+          />
+          <ErrorMessage
+            name="recaptcha"
+            component="span"
+            className={styles.error}
+          />
+        </div>
+      )} */}
+      <div data-netlify-recaptcha="true"></div>
       {values.success && (
         <div className={styles.success}>
           <h4>
@@ -109,7 +103,7 @@ export const ContactForm = withFormik({
     name: "",
     email: "",
     message: "",
-    recaptcha: "",
+    // recaptcha: "",
     success: false,
   }),
   validationSchema: () =>
@@ -119,10 +113,10 @@ export const ContactForm = withFormik({
         .email("Invalid email")
         .required("Email field is required"),
       message: Yup.string().required("Message field is required"),
-      recaptcha: Yup.string().required("Robots are not welcome yet!"),
+      // recaptcha: Yup.string().required("Robots are not welcome yet!"),
     }),
   handleSubmit: async (
-    { name, email, message, recaptcha },
+    { name, email, message },
     { setSubmitting, resetForm, setFieldValue }
   ) => {
     try {
@@ -141,7 +135,7 @@ export const ContactForm = withFormik({
           name,
           email,
           message,
-          "g-recaptcha-response": recaptcha,
+          // "g-recaptcha-response": recaptcha,
         }),
       })
       await setSubmitting(false)
