@@ -14,7 +14,7 @@ const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
       name="contact"
       method="post"
       data-netlify="true"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
       data-netlify-honeypot="bot-field"
     >
       <h3 className={styles.formTitle}>Feel free to contact me</h3>
@@ -76,7 +76,6 @@ const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
           />
         </div>
       )} */}
-      <div data-netlify-recaptcha="true"></div>
       {values.success && (
         <div className={styles.success}>
           <h4>
