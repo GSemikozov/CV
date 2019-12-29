@@ -1,11 +1,8 @@
-import { ErrorMessage, FastField, Form, withFormik } from 'formik';
+import { FastField, Form, withFormik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
 
 import styles from './contact-form.module.css';
-
-// import Recaptcha from 'react-google-recaptcha';
-// const recaptcha_key = "6LdNrcoUAAAAAAhel9tZw5JIDc-7JcMEG1H_RRB4"
 
 const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
   return (
@@ -14,7 +11,6 @@ const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
       name="contact"
       method="post"
       data-netlify="true"
-      // data-netlify-recaptcha="true"
       data-netlify-honeypot="bot-field"
     >
       <h3 className={styles.formTitle}>Feel free to contact me</h3>
@@ -61,21 +57,6 @@ const ContactFormLayout = ({ isSubmitting, values, errors, touched }) => {
           <span className={styles.error}>{errors.message}</span>
         )}
       </div>
-      {/* {values.name && values.email && values.message && (
-        <div className={styles.inputField}>
-          <FastField
-            component={Recaptcha}
-            sitekey={recaptcha_key}
-            name="recaptcha"
-            onChange={value => setFieldValue("recaptcha", value)}
-          />
-          <ErrorMessage
-            name="recaptcha"
-            component="span"
-            className={styles.error}
-          />
-        </div>
-      )} */}
       {values.success && (
         <div className={styles.success}>
           <h4>
@@ -102,7 +83,6 @@ export const ContactForm = withFormik({
     name: "",
     email: "",
     message: "",
-    // recaptcha: "",
     success: false,
   }),
   validationSchema: () =>
@@ -112,7 +92,6 @@ export const ContactForm = withFormik({
         .email("Invalid email")
         .required("Email field is required"),
       message: Yup.string().required("Message field is required"),
-      // recaptcha: Yup.string().required("Robots are not welcome yet!"),
     }),
   handleSubmit: async (
     { name, email, message },
@@ -126,7 +105,7 @@ export const ContactForm = withFormik({
           )
           .join("&")
       }
-      await fetch("/", {
+      await fetch("/?no-cache=1", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
@@ -134,7 +113,7 @@ export const ContactForm = withFormik({
           name,
           email,
           message,
-          // "g-recaptcha-response": recaptcha,
+          "g-recaptcha-response": recaptcha,
         }),
       })
       await setSubmitting(false)
