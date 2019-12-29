@@ -113,7 +113,6 @@ export const ContactForm = withFormik({
           name,
           email,
           message,
-          "g-recaptcha-response": recaptcha,
         }),
       })
       await setSubmitting(false)
