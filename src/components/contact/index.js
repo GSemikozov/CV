@@ -68,19 +68,20 @@ const ContactFormLayout = ({
         )}
       </div>
       {values.name && values.email && values.message && (
-        <div className={styles.inputField}>
-          <FastField
-            component={Recaptcha}
-            sitekey={recaptcha_key}
-            name="recaptcha"
-            onChange={value => setFieldValue("recaptcha", value)}
-          />
-          <ErrorMessage
-            name="recaptcha"
-            component="span"
-            className={styles.error}
-          />
-        </div>
+        // <div className={styles.inputField}>
+        //   <FastField
+        //     component={Recaptcha}
+        //     sitekey={recaptcha_key}
+        //     name="recaptcha"
+        //     onChange={value => setFieldValue("recaptcha", value)}
+        //   />
+        //   <ErrorMessage
+        //     name="recaptcha"
+        //     component="span"
+        //     className={styles.error}
+        //   />
+        // </div>
+        <div data-netlify-recaptcha="true"></div>
       )}
       {values.success && (
         <div className={styles.success}>
