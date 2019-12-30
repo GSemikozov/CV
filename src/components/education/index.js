@@ -17,7 +17,7 @@ export const Education = () => (
     <div className={styles.education}>
       <div className={styles.educationDate}>2007 - 2012</div>
       <h4 className={styles.educationTitle}>
-        History of Philosoply, <br />
+        History of Philosophy, <br />
         masters degree
       </h4>
       <p className={styles.educationPlace}>Kharkov National University</p>
