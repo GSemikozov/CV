@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './experience.module.css';
-import { AMLogo, LearnJSLogo, MtLogo, MtTR3Logo, NELogo, PaxfulLogo } from './logos';
+import { AMLogo, ElLogo, LearnJSLogo, MtLogo, MtTR3Logo, NELogo, PaxfulLogo } from './logos';
 
 export const Experience = () => (
   <div className={styles.experienceTimelineWrapper}>
@@ -53,6 +53,17 @@ export const Experience = () => (
           Migrate from modx to laravel, improve website performance, create a
           landings, implement new features and so on.
         </p>
+      </div>
+      <div className={styles.experienceTimelineBox}>
+        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineHeader}>
+          <div className={styles.experienceTimelineDate}>2013 - 2014</div>
+          <a href="http://eleng.com.ua/">
+            <ElLogo />
+          </a>
+          <h4>html developer / content manager</h4>
+        </div>
+        <p>ModX website: create pages, add content, bugfixing</p>
       </div>
     </div>
     <div className={styles.experienceTimelineColumn}>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import amLogo from './logos/am_logo.png';
+import elLogo from './logos/el_logo.png';
 import learnJSLogo from './logos/learn-javascript_logo.svg';
 import mtLogo from './logos/mt_logo.svg';
 import mtTR3Logo from './logos/mtrading_logo.png';
@@ -40,5 +41,11 @@ export const LearnJSLogo = () => (
 export const AMLogo = () => (
   <>
     <img src={amLogo} width="140" alt="company-logo" />
+  </>
+)
+
+export const ElLogo = () => (
+  <>
+    <img src={elLogo} width="40" alt="company-logo" />
   </>
 )

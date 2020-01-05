@@ -65,9 +65,21 @@ export const Skills = () => (
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>Laravel, php, mysql</div>
+      <div className={styles.skillData}>MongoDB</div>
       <div className={styles.skillLine}>
         <div className={styles.skillFill} style={{ width: `61%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>graphQL, apollo</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `79%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>Karma, jest, enzyme, protractor</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `65%` }}></div>
       </div>
     </div>
     <div className={styles.skill}>
