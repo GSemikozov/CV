@@ -67,25 +67,25 @@ export const Skills = () => (
     <div className={styles.skill}>
       <div className={styles.skillData}>MongoDB</div>
       <div className={styles.skillLine}>
-        <div className={styles.skillFill} style={{ width: `61%` }}></div>
+        <div className={styles.skillFill} style={{ width: `70%` }}></div>
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>graphQL, apollo</div>
+      <div className={styles.skillData}>GraphQL, Apollo</div>
       <div className={styles.skillLine}>
-        <div className={styles.skillFill} style={{ width: `79%` }}></div>
+        <div className={styles.skillFill} style={{ width: `82%` }}></div>
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>Karma, jest, enzyme, protractor</div>
+      <div className={styles.skillData}>Karma, Jest, Enzyme, Protractor</div>
       <div className={styles.skillLine}>
         <div className={styles.skillFill} style={{ width: `65%` }}></div>
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>MongoDB, graphQL</div>
+      <div className={styles.skillData}>Php, Laravel, Mysql</div>
       <div className={styles.skillLine}>
-        <div className={styles.skillFill} style={{ width: `79%` }}></div>
+        <div className={styles.skillFill} style={{ width: `61%` }}></div>
       </div>
     </div>
   </div>
