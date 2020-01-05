@@ -54,17 +54,6 @@ export const Experience = () => (
           landings, implement new features and so on.
         </p>
       </div>
-      <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
-        <div className={styles.experienceTimelineHeader}>
-          <div className={styles.experienceTimelineDate}>2013 - 2014</div>
-          <a href="http://eleng.com.ua/">
-            <ElLogo />
-          </a>
-          <h4>html developer / content manager</h4>
-        </div>
-        <p>ModX website: create pages, add content, bugfixing</p>
-      </div>
     </div>
     <div className={styles.experienceTimelineColumn}>
       <div className={styles.experienceTimelineBox}>
@@ -115,6 +104,17 @@ export const Experience = () => (
           necessary things) - for the whole project. Project was a SPA in
           angular 2.
         </p>
+      </div>
+      <div className={styles.experienceTimelineBox}>
+        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineHeader}>
+          <div className={styles.experienceTimelineDate}>2013 - 2014</div>
+          <a href="http://eleng.com.ua/">
+            <ElLogo />
+          </a>
+          <h4>html developer / content manager</h4>
+        </div>
+        <p>ModX website: create pages, add content, bugfixing</p>
       </div>
     </div>
   </div>
