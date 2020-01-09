@@ -108,7 +108,7 @@ export const Experience = () => (
       <div className={styles.experienceTimelineBox}>
         <div className={styles.experienceTimelineDot}></div>
         <div className={styles.experienceTimelineHeader}>
-          <div className={styles.experienceTimelineDate}>2013 - 2014</div>
+          <div className={styles.experienceTimelineDate}>2014 - 2015</div>
           <a href="http://eleng.com.ua/">
             <ElLogo />
           </a>
