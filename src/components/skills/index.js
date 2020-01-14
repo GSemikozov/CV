@@ -77,7 +77,9 @@ export const Skills = () => (
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>Karma, Jest, Enzyme, Protractor</div>
+      <div className={styles.skillData}>
+        Karma, Jasmine, Jest, Enzyme, Puppeteer, Protractor
+      </div>
       <div className={styles.skillLine}>
         <div className={styles.skillFill} style={{ width: `65%` }}></div>
       </div>
