@@ -35,7 +35,7 @@ export const Skills = () => (
       </div>
     </div>
     <div className={styles.skill}>
-      <div className={styles.skillData}>React + Redux</div>
+      <div className={styles.skillData}>React + Redux + TS</div>
       <div className={styles.skillLine}>
         <div className={styles.skillFill} style={{ width: `80%` }}></div>
       </div>
