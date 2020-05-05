@@ -11,7 +11,7 @@ export const Experience = () => (
         <div className={styles.experienceTimelineDot}></div>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2018 - present</div>
-          <a href="https://mtrading.com">
+          <a href="https://paxful.com">
             <PaxfulLogo />
           </a>
           <h4>Front-end developer</h4>
@@ -28,8 +28,8 @@ export const Experience = () => (
       <div className={styles.experienceTimelineBox}>
         <div className={styles.experienceTimelineDot}></div>
         <div className={styles.experienceTimelineHeader}>
-          <div className={styles.experienceTimelineDate}>2016 - present</div>
-          <a href="https://mtrading.com">
+          <div className={styles.experienceTimelineDate}>2016 - 2019</div>
+          <a href="https://nowescape.com">
             <NELogo />
           </a>
           <h4>front-end UI developer</h4>
@@ -60,7 +60,7 @@ export const Experience = () => (
         <div className={styles.experienceTimelineDot}></div>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2018 - present</div>
-          <a href="https://mtrading.com">
+          <a href="https://learn.javascript.ru">
             <LearnJSLogo />
           </a>
           <h4>front-end developer</h4>
@@ -93,7 +93,7 @@ export const Experience = () => (
         <div className={styles.experienceTimelineDot}></div>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2015 - 2016</div>
-          <a href="https://mtrading.com">
+          <a href="https://tr3.mtrading.com">
             <MtTR3Logo />
           </a>
           <h4>front-end UI developer</h4>
