@@ -77,6 +77,18 @@ export const Skills = () => (
       </div>
     </div>
     <div className={styles.skill}>
+      <div className={styles.skillData}>Rxjs</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `70%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
+      <div className={styles.skillData}>React Native (+ Expo)</div>
+      <div className={styles.skillLine}>
+        <div className={styles.skillFill} style={{ width: `70%` }}></div>
+      </div>
+    </div>
+    <div className={styles.skill}>
       <div className={styles.skillData}>
         Karma, Jasmine, Jest, Enzyme, Puppeteer, Protractor
       </div>
