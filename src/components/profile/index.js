@@ -21,14 +21,14 @@ export const Profile = () => (
               I'm <strong>Herman Semykozov</strong>
             </h1>
             <h2 className={styles.profilePosition}>
-              Front-end developer based in Tallinn
+              Front-end developer currently based in Tallinn
             </h2>
           </div>
           <div className={styles.profileTable}>
             <strong>Age</strong>
             <span>30</span>
             <strong>Address</strong>
-            <span>10134, Estonia, Tallinn, Veerenni 4</span>
+            <span>10119, Estonia, Tallinn, Roosikrantsi 8c</span>
             <strong>E-mail</strong>
             <span>semikozovgerman@gmail.com</span>
             <strong>Phone</strong>
