@@ -47,7 +47,8 @@ export const Profile = () => (
         Hello! I’m Herman Semykozov. Experienced Web Developer specializing in
         front end development. Experienced with all stages of the development
         cycle for dynamic web projects. Well-versed in JavaScript and
-        JS-frameworks / JS-libraries like React, Redux, Vue, AngularJS, Node.
+        JS-frameworks / JS-libraries like React, Redux, React Native, Vue,
+        AngularJS, Node.
       </p>
     </div>
   </>
