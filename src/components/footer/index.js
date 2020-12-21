@@ -24,7 +24,7 @@ export const Footer = ({ className }) => (
       </svg>
     </a>
     <a
-      href="https://www.linkedin.com/in/herman-semykozov-8b3265aa/"
+      href="https://www.linkedin.com/in/herman-semykozov/"
       target="_blank"
       rel="noopener noreferrer"
     >
