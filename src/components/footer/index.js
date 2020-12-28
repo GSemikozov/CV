@@ -9,6 +9,7 @@ export const Footer = ({ className }) => (
       href="https://github.com/GSemikozov"
       target="_blank"
       rel="noopener noreferrer"
+      style="display: none"
     >
       <svg
         stroke="#673bb7"
