@@ -7,6 +7,8 @@ import NEplaceholder from './images/ne-placeholder.jpg';
 import openLinkIcon from './images/open-link-icon.svg';
 import PAXplaceholder from './images/pax-placeholder.jpg';
 import TR3placeholder from './images/tr3-placeholder.jpg';
+import EDGplaceholder from './images/edg-placeholder.png';
+import Commas3placeholder from './images/3commas-placeholder.png';
 import styles from './portfolio.module.css';
 
 const portfolioItems = [
@@ -36,15 +38,15 @@ const portfolioItems = [
   },
   {
     id: 5,
-    heading: "Nowescape",
-    url: "https://nowescape.com",
-    img: NEplaceholder,
+    heading: "3commas",
+    url: "https://3commas.io",
+    img: Commas3placeholder,
   },
   {
     id: 6,
-    heading: "TR3 MTrading",
-    url: "https://tr3.mtrading.com",
-    img: TR3placeholder,
+    heading: "Edgio",
+    url: "https://edg.io",
+    img: EDGplaceholder,
   },
 ]
 

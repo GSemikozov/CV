@@ -1,17 +1,31 @@
 import React from 'react';
 
 import styles from './experience.module.css';
-import { AMLogo, ElLogo, LearnJSLogo, MtLogo, MtTR3Logo, NELogo, PaxfulLogo } from './logos';
+import { AMLogo, ElLogo, LearnJSLogo, MtLogo, MtTR3Logo, NELogo, PaxfulLogo, CommasLogo, EdgLogo } from './logos';
 
 export const Experience = () => (
   <div className={styles.experienceTimelineWrapper}>
-    <div className={styles.experienceTimelineTrack}></div>
+    <div className={styles.experienceTimelineTrack}/>
     <div className={styles.experienceTimelineColumn}>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
-          <div className={styles.experienceTimelineDate}>2018 - present</div>
-          <a href="https://paxful.com">
+          <div className={styles.experienceTimelineDate}>2021 - present</div>
+          <a href="https://3commas.io/" target="_blank">
+            <CommasLogo />
+          </a>
+          <h4>Team Lead / Front-end developer</h4>
+        </div>
+        <p>
+          Responsible for billing processes + UI-kit and design-system. Lead two appropriate teams.
+          Stack - react + ts + redux + storybook + jest + redux-saga + css-in-js.
+        </p>
+      </div>
+      <div className={styles.experienceTimelineBox}>
+        <div className={styles.experienceTimelineDot}/>
+        <div className={styles.experienceTimelineHeader}>
+          <div className={styles.experienceTimelineDate}>2018 - 2021</div>
+          <a href="https://paxful.com" target="_blank">
             <PaxfulLogo />
           </a>
           <h4>Front-end developer</h4>
@@ -25,11 +39,12 @@ export const Experience = () => (
           typescript + rxjs + webpack + css-modules.
         </p>
       </div>
+
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2016 - 2019</div>
-          <a href="https://nowescape.com">
+          <a href="https://nowescape.com" target="_blank">
             <NELogo />
           </a>
           <h4>front-end UI developer</h4>
@@ -41,10 +56,10 @@ export const Experience = () => (
         </p>
       </div>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2016 - 2018</div>
-          <a href="https://mtrading.com">
+          <a href="https://mtrading.com" target="_blank">
             <MtLogo />
           </a>
           <h4>full-stack web developer</h4>
@@ -57,10 +72,10 @@ export const Experience = () => (
     </div>
     <div className={styles.experienceTimelineColumn}>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2018 - present</div>
-          <a href="https://learn.javascript.ru">
+          <a href="https://learn.javascript.ru" target="_blank">
             <LearnJSLogo />
           </a>
           <h4>front-end developer</h4>
@@ -72,10 +87,23 @@ export const Experience = () => (
         </p>
       </div>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
+        <div className={styles.experienceTimelineHeader}>
+          <div className={styles.experienceTimelineDate}>2022</div>
+          <a href="https://edg.io/" target="_blank">
+            <EdgLogo />
+          </a>
+          <h4>Lead Engineer</h4>
+        </div>
+        <p>
+          Responsible for design-system implementation. It was based on figma mockups, material-ui, storybook and nx.
+        </p>
+      </div>
+      <div className={styles.experienceTimelineBox}>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2016 - 2018</div>
-          <a href="https://admiralmarkets.com">
+          <a href="https://admiralmarkets.com" target="_blank">
             <AMLogo />
           </a>
           <h4>front-end / full-stack developer</h4>
@@ -90,10 +118,10 @@ export const Experience = () => (
         </p>
       </div>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2015 - 2016</div>
-          <a href="https://tr3.mtrading.com">
+          <a href="https://tr3.mtrading.com" target="_blank">
             <MtTR3Logo />
           </a>
           <h4>front-end UI developer</h4>
@@ -106,10 +134,10 @@ export const Experience = () => (
         </p>
       </div>
       <div className={styles.experienceTimelineBox}>
-        <div className={styles.experienceTimelineDot}></div>
+        <div className={styles.experienceTimelineDot}/>
         <div className={styles.experienceTimelineHeader}>
           <div className={styles.experienceTimelineDate}>2014 - 2015</div>
-          <a href="http://eleng.com.ua/">
+          <a href="http://eleng.com.ua/" target="_blank">
             <ElLogo />
           </a>
           <h4>html developer / content manager</h4>

@@ -26,7 +26,7 @@ export const Profile = () => (
           </div>
           <div className={styles.profileTable}>
             <strong>Age</strong>
-            <span>31</span>
+            <span>33</span>
             <strong>Address</strong>
             <span>10119, Estonia, Tallinn, Roosikrantsi 8c</span>
             <strong>E-mail</strong>

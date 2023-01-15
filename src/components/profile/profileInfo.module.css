@@ -35,7 +35,7 @@
 .profileInfo {
   color: var(--color-body);
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #dedede;
   text-align: center;
 }
@@ -89,6 +89,7 @@
   display: grid;
   grid-auto-rows: 30px;
   grid-template-columns: 1fr;
+  align-items: center;
 }
 
 .profileTable span {

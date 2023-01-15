@@ -7,6 +7,8 @@ import mtLogo from './logos/mt_logo.svg';
 import mtTR3Logo from './logos/mtrading_logo.png';
 import neLogo from './logos/nowescape_logo.svg';
 import paxfulLogo from './logos/paxful_logo.svg';
+import commasLogo from "./logos/3commas_logo.svg";
+import edgioLogo from "./logos/edgio_logo.png";
 
 export const PaxfulLogo = () => (
   <>
@@ -48,4 +50,16 @@ export const ElLogo = () => (
   <>
     <img src={elLogo} width="40" alt="company-logo" />
   </>
+)
+
+export const CommasLogo = () => (
+    <>
+        <img src={commasLogo} width="140" alt="company-logo" />
+    </>
+)
+
+export const EdgLogo = () => (
+    <>
+        <img src={edgioLogo} width="140" alt="company-logo" />
+    </>
 )

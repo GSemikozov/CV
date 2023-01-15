@@ -37,8 +37,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#3f51b5`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
+        display: `minimal-ui`
       },
     },
     `gatsby-plugin-offline`,
